@@ -1,0 +1,1403 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "hbclogo.PNG",
+            "Alpha": 0,
+            "Name": "image1",
+            "X": 186,
+            "Y": 89,
+            "Width": 108,
+            "Height": 94,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 255,
+              "Easing": "Sine",
+              "EasingOption": "In",
+              "Duration": 2000,
+              "ActionComponent": "image1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 2000
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "WaitingScreen"
+            }
+          }
+        ],
+        "Name": "StartupScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "ConnWaitText",
+            "X": 134,
+            "Y": 116,
+            "Width": 164,
+            "Height": 41,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "oneCommaText",
+            "X": 306,
+            "Y": 116,
+            "Width": 10,
+            "Height": 41,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "twoCommaText",
+            "X": 306,
+            "Y": 116,
+            "Width": 21,
+            "Height": 41,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "ThreeCommaText",
+            "X": 306,
+            "Y": 116,
+            "Width": 31,
+            "Height": 41,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenTransitionBegins"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// if FLAG_STATE CHANGE SCREEN"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MainScreen"
+            }
+          }
+        ],
+        "Name": "WaitingScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "matrix_box213.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 14,
+            "Y": 9,
+            "Width": 213,
+            "Height": 254,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": true
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 47,
+                "Height": 150,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 138,
+                  "Green": 138,
+                  "Blue": 138
+                },
+                "ColorPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                }
+              }
+            ],
+            "Name": "ArmButton",
+            "X": 28,
+            "Y": 32,
+            "Width": 47,
+            "Height": 150,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": true
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 66,
+                "Height": 66,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 138,
+                  "Green": 138,
+                  "Blue": 138
+                },
+                "ColorPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                }
+              }
+            ],
+            "Name": "BackButton",
+            "X": 87,
+            "Y": 116,
+            "Width": 66,
+            "Height": 66,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": true
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 48,
+                "Height": 150,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 138,
+                  "Green": 138,
+                  "Blue": 138
+                },
+                "ColorPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                }
+              }
+            ],
+            "Name": "ArmButton_1",
+            "X": 168,
+            "Y": 32,
+            "Width": 48,
+            "Height": 150,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": true
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 66,
+                "Height": 45,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 138,
+                  "Green": 138,
+                  "Blue": 138
+                },
+                "ColorPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                }
+              }
+            ],
+            "Name": "LegButton",
+            "X": 87,
+            "Y": 201,
+            "Width": 66,
+            "Height": 45,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": true
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 66,
+                "Height": 66,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 138,
+                  "Green": 138,
+                  "Blue": 138
+                },
+                "ColorPressed": {
+                  "Red": 230,
+                  "Green": 173,
+                  "Blue": 16
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 222,
+                  "Green": 0,
+                  "Blue": 0
+                }
+              }
+            ],
+            "Name": "BackButton_1",
+            "X": 87,
+            "Y": 32,
+            "Width": 66,
+            "Height": 66,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId39",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1",
+            "X": 106,
+            "Y": 142,
+            "Width": 30,
+            "Height": 15,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId32",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1_1",
+            "X": 37,
+            "Y": 98,
+            "Width": 30,
+            "Height": 15,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId38",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1_1_1",
+            "X": 106,
+            "Y": 216,
+            "Width": 30,
+            "Height": 15,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId14",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1_1_2",
+            "X": 106,
+            "Y": 58,
+            "Width": 30,
+            "Height": 15,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId15",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1_1_3",
+            "X": 178,
+            "Y": 98,
+            "Width": 30,
+            "Height": 15,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Up_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "Name": "upCountBtn",
+            "X": 380,
+            "Y": 193,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Down_arrow_32.png",
+            "IconX": 15,
+            "IconY": 22,
+            "IconHeight": 17,
+            "IconWidth": 30,
+            "Name": "downCountBtn",
+            "X": 260,
+            "Y": 193,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId19",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "ArmConButton",
+            "X": 230,
+            "Y": 47,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId20",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "BackConButton",
+            "X": 290,
+            "Y": 47,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId21",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "LegConButton",
+            "X": 350,
+            "Y": 47,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId22",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "RollerConButton",
+            "X": 410,
+            "Y": 47,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 2,
+            "Alpha": 255,
+            "Name": "boxWithBorder1",
+            "X": 236,
+            "Y": 120,
+            "Width": 49,
+            "Height": 59,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 2,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_1",
+            "X": 296,
+            "Y": 120,
+            "Width": 49,
+            "Height": 59,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 2,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_1_1",
+            "X": 356,
+            "Y": 120,
+            "Width": 49,
+            "Height": 59,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 2,
+            "Alpha": 255,
+            "Name": "boxWithBorder1_1_1_1",
+            "X": 416,
+            "Y": 120,
+            "Width": 49,
+            "Height": 59,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId25",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea3",
+            "X": 306,
+            "Y": 9,
+            "Width": 90,
+            "Height": 29,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId23",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId24",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "ArmConText",
+            "X": 246,
+            "Y": 135,
+            "Width": 29,
+            "Height": 29,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId26",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId27",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "BackConText",
+            "X": 306,
+            "Y": 135,
+            "Width": 29,
+            "Height": 29,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId28",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId29",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "LegConText",
+            "X": 366,
+            "Y": 135,
+            "Width": 29,
+            "Height": 29,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId30",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId31",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "RollerConText",
+            "X": 426,
+            "Y": 135,
+            "Width": 29,
+            "Height": 29,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ArmButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// button clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ArmButton_1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// button clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "LegButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// button clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// button clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackButton_1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// button clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction7",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "WaitingScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction8",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "upCountBtn"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// upButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction9",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "downCountBtn"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "// downButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction10",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ArmConButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ArmConBtnClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction11",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackConButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "BackConBtnClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction12",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "LegConButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "LegConBtnClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction13",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "RollerConButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "RollerConBtnClicked"
+            }
+          }
+        ],
+        "Name": "MainScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SAVESTATE",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "CELTEXT",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "FAHRTEXT",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId38",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId39",
+        "IsResource": false
+      }
+    ],
+    "Name": "STM32F750_UI_HBC",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "StartupScreen",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../STM32F7508-DK.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7"
+  },
+  "Version": "4.17.0",
+  "CreatedBy": "4.17.0"
+}
