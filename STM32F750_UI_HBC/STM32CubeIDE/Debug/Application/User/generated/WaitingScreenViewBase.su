@@ -1,0 +1,30 @@
+Drawable.hpp:132:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+Drawable.hpp:269:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+Drawable.hpp:281:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+Drawable.hpp:310:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+Drawable.hpp:322:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+Drawable.hpp:332:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+Drawable.hpp:343:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+Drawable.hpp:354:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+Drawable.hpp:442:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+Drawable.hpp:452:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+Drawable.hpp:539:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+Drawable.hpp:654:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+Screen.hpp:92:18:virtual void touchgfx::Screen::setupScreen()	0	static
+Screen.hpp:103:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:114:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+Screen.hpp:143:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:153:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+View.hpp:36:7:touchgfx::View<WaitingScreenPresenter>::~View()	0	static
+WaitingScreenViewBase.hpp:17:13:WaitingScreenViewBase::~WaitingScreenViewBase()	0	static
+WaitingScreenViewBase.cpp:58:6:virtual void WaitingScreenViewBase::setupScreen()	0	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+View.hpp:36:7:virtual touchgfx::View<WaitingScreenPresenter>::~View()	8	static
+WaitingScreenViewBase.hpp:17:13:virtual WaitingScreenViewBase::~WaitingScreenViewBase()	8	static
+Drawable.hpp:297:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:216:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+Box.hpp:33:5:touchgfx::Box::Box()	0	static
+TextArea.hpp:42:5:touchgfx::TextArea::TextArea()	0	static
+WaitingScreenViewBase.cpp:21:1:WaitingScreenViewBase::WaitingScreenViewBase()	64	static

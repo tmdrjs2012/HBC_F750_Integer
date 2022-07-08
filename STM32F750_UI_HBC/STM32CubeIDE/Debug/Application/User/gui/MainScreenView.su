@@ -1,0 +1,13 @@
+Screen.hpp:153:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+MainScreenView.hpp:11:13:MainScreenView::~MainScreenView()	0	static
+MainScreenView.cpp:85:6:virtual void MainScreenView::tearDownScreen()	0	static
+MainScreenView.cpp:77:6:virtual void MainScreenView::setupScreen()	8	static
+MainScreenView.cpp:740:6:virtual void MainScreenView::ArmConBtnClicked()	8	static
+MainScreenView.cpp:749:6:virtual void MainScreenView::BackConBtnClicked()	8	static
+MainScreenView.cpp:759:6:virtual void MainScreenView::LegConBtnClicked()	8	static
+MainScreenView.cpp:769:6:virtual void MainScreenView::RollerConBtnClicked()	8	static
+MainScreenView.hpp:11:13:virtual MainScreenView::~MainScreenView()	8	static
+AbstractButtonContainer.hpp:51:10:void touchgfx::AbstractButtonContainer::setPressed(bool)	0	static
+MainScreenView.cpp:70:1:MainScreenView::MainScreenView()	8	static
+BoxWithBorderButtonStyle.hpp:94:10:void touchgfx::BoxWithBorderButtonStyle<T>::setBoxWithBorderColors(touchgfx::colortype, touchgfx::colortype, touchgfx::colortype, touchgfx::colortype) [with T = touchgfx::ToggleButtonTrigger]	4	static
+MainScreenView.cpp:90:6:virtual void MainScreenView::handleTickEvent()	72	static

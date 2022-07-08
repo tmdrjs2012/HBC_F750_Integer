@@ -1,0 +1,5 @@
+StartupScreenPresenter.hpp:28:13:StartupScreenPresenter::~StartupScreenPresenter()	0	static
+StartupScreenPresenter.cpp:10:6:virtual void StartupScreenPresenter::activate()	0	static
+StartupScreenPresenter.hpp:28:13:virtual StartupScreenPresenter::~StartupScreenPresenter()	8	static
+StartupScreenPresenter.hpp:28:13:virtual void* StartupScreenPresenter::_ZThn4_N22StartupScreenPresenterD1Ev()	0	static
+StartupScreenPresenter.cpp:4:1:StartupScreenPresenter::StartupScreenPresenter(StartupScreenView&)	8	static
